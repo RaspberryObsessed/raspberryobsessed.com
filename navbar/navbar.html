@@ -1,8 +1,7 @@
 <ul>
     <li><a href="/">Home</a></li>
-    <li><a href="/coming-soon">Videos</a></li>
-    <li><a href="/coming-soon">About</a></li>
-    <li><a href="/coming-soon">Contact</a></li>
+    <li><a href="/videos">Videos</a></li>
+    <li><a href="/about">About</a></li>
 </ul>
 <div class="social-icons">
     <a href="https://www.youtube.com/@RaspberryObsessed" target="_blank">
@@ -27,7 +26,7 @@
         padding: 10px 0;
         position: sticky;
         top: 0;
-        z-index: 1000; /* Ensure the navigation bar is above other content */
+        z-index: 1000;
     }
 
     .social-icons {
@@ -50,9 +49,9 @@
 
     nav {
         display: flex;
-        justify-content: space-between; /* Distributes items along the main axis */
+        justify-content: space-between;
         align-items: center;
-        padding: 10px 20px; /* Add horizontal padding for spacing */
+        padding: 10px 20px;
         background-color: #111;
     }
 
@@ -77,15 +76,15 @@
         position: relative;
     }
 
-    /* Add the sliding underline effect to navigation links */
+    /* Sliding underline effect */
     nav a:not(.social-icons)::before {
         content: '';
         position: absolute;
         width: 0;
         height: 3px;
-        bottom: -5px; /* Position the underline slightly below the text */
-        background-color: #ff9900; /* Underline color */
-        transition: width 0.3s ease-in-out; /* Add transition effect to width */
+        bottom: -5px; /* Underline slightly below the text */
+        background-color: #ff9900;
+        transition: width 0.3s ease-in-out;
     }
 
     nav a:not(.social-icons):hover::before {
