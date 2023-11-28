@@ -4,4 +4,3 @@ fetch('/navbar/navbar.html')
 .then(data=>{
     nav.innerHTML+=data
 })
-//some info about this script at ../README.md or just /navbar/README.md
