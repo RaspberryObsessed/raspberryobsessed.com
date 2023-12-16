@@ -37,13 +37,7 @@
         document.getElementById('backBtn').addEventListener('click', goBack)
 
         function goBack() {
-            if (document.referrer) {
-                // If there is a previous page in the browser history, go back
-                window.location.href = "javascript:history.go(-1)";
-            } else {
-                // If there is no previous page, go to the home page
-                window.location.href = "/";
-            }
+            window.location.href="javascript:history.go(-1)";
         } 
     </script>
 </body>
