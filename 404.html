@@ -37,8 +37,12 @@
         document.getElementById('backBtn').addEventListener('click', goBack)
 
         function goBack() {
-            window.location.href="javascript:history.go(-1)";
-        } 
+            if (window.history.length > 1) {
+                window.location.href="javascript:history.go(-1)";
+            } else {
+                window.location.href="https://www.raspberryobsessed.com/";
+            }
+        }
     </script>
 </body>
 </html>
