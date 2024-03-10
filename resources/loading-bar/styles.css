@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#loading-bar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px; /* Adjust the height of the loading bar */
+    background-color: #ccc; /* Background color of the loading bar container */
+    opacity: 1;
+    transition: opacity 1s; /* Fade out transition for the loading bar container */
+}
+
+#loading-bar {
+    height: 100%;
+    width: 0; /* Start with 0% width */
+    background-color: #0f6cee; /* Color of the loading bar */
+    transition: width 1.5s; /* Transition effect for the loading bar (slightly slower) */
+}
